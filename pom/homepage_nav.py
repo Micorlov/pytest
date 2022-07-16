@@ -14,7 +14,7 @@ class HomepageNav(SeleniumBase):
         self.NAV_LINK_TEXT = 'Are we alone? The search for life in the universe'
 
     def get_nav_links(self) -> List[WebElement]:
-        return self.are_visible('css', self.__nav_links, 'Navigation Links')
+        return self.are_visible('css', self.__nav_links, 'Navigation Links Test')
 
     def get_nav_links_text(self) -> str:
         nav_links = self.get_nav_links()
